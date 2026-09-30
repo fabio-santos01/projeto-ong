@@ -1,8 +1,8 @@
 
 /* =========================================================
    ESTILO GERAL - ONG
-   Grid = estrutura macro | Flexbox = organiza√ß√£o interna
-   Sistema de espa√ßamento baseado em m√∫ltiplos de 8px
+   Grid = estrutura macro | Flexbox = organizaÁ„o interna
+   Sistema de espaÁamento baseado em m˙ltiplos de 8px
    ========================================================= */
 
 * {
@@ -49,7 +49,28 @@ footer {
 }
 
 /* =========================================================
-   CABE√áALHO E NAVEGA√á√ÉO
+   ACESSIBILIDADE
+   ========================================================= */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 2000;
+    padding: 8px 16px;
+    background-color: #176b3a;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+/* =========================================================
+   CABE«ALHO E NAVEGA«√O
    ========================================================= */
 
 header {
@@ -107,7 +128,7 @@ main > section {
 }
 
 /* =========================================================
-   CONTE√öDO
+   CONTE⁄DO
    ========================================================= */
 
 section {
@@ -150,7 +171,7 @@ article a {
 }
 
 /* =========================================================
-   IMAGEM DA P√ÅGINA INICIAL
+   IMAGEM DA P¡GINA INICIAL
    ========================================================= */
 
 #inicio img {
@@ -160,7 +181,7 @@ article a {
 }
 
 /* =========================================================
-   RODAP√â
+   RODAP…
    ========================================================= */
 
 footer {
@@ -186,7 +207,7 @@ address p {
 }
 
 /* =========================================================
-   FORMUL√ÅRIO
+   FORMUL¡RIO
    ========================================================= */
 
 form {
@@ -250,7 +271,7 @@ input:invalid:not(:placeholder-shown) {
 }
 
 /* =========================================================
-   BOT√ïES
+   BOT’ES
    ========================================================= */
 
 button {
@@ -295,7 +316,7 @@ button:disabled {
 }
 
 /* =========================================================
-   FEEDBACK - CLASSES PREPARADAS PARA FUTURA UTILIZA√á√ÉO
+   FEEDBACK - CLASSES PREPARADAS PARA FUTURA UTILIZA«√O
    ========================================================= */
 
 /* Badges */
@@ -485,7 +506,7 @@ button:disabled {
 }
 
 /* =========================================================
-   REDU√á√ÉO DE MOVIMENTO
+   REDU«√O DE MOVIMENTO
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
@@ -500,7 +521,7 @@ button:disabled {
     }
 }
 
-/* Feedback de valida√ß√£o gerado pelo JavaScript */
+/* Feedback de validaÁ„o gerado pelo JavaScript */
 .mensagem-erro {
     display: block;
     margin-top: 4px;
@@ -516,4 +537,87 @@ input[aria-invalid="true"] {
 
 #form-feedback:empty {
     display: none;
+}
+/* =========================================================
+   MODO ESCURO
+   ========================================================= */
+
+body.tema-escuro {
+    color: #e8eee9;
+    background-color: #18201b;
+}
+
+body.tema-escuro header,
+body.tema-escuro footer {
+    border-color: #3a463e;
+}
+
+body.tema-escuro header h1,
+body.tema-escuro section h2,
+body.tema-escuro footer h2 {
+    color: #9bd3ad;
+}
+
+body.tema-escuro nav a {
+    color: #e8eee9;
+}
+
+body.tema-escuro nav a:hover {
+    color: #9bd3ad;
+    border-bottom-color: #9bd3ad;
+}
+
+body.tema-escuro section {
+    background-color: #222c26;
+    border-color: #3a463e;
+}
+
+body.tema-escuro article {
+    background-color: #18201b;
+    border-color: #3a463e;
+}
+
+body.tema-escuro article h3,
+body.tema-escuro article h4 {
+    color: #e8eee9;
+}
+
+body.tema-escuro fieldset {
+    background-color: #222c26;
+    border-color: #4b584f;
+}
+
+body.tema-escuro legend {
+    color: #9bd3ad;
+}
+
+body.tema-escuro input {
+    background-color: #18201b;
+    color: #e8eee9;
+    border-color: #68766d;
+}
+
+body.tema-escuro input:focus {
+    border-color: #9bd3ad;
+    outline-color: #9bd3ad;
+}
+
+body.tema-escuro .modal {
+    background-color: #222c26;
+    border-color: #3a463e;
+}
+
+body.tema-escuro .theme-toggle {
+    background-color: #9bd3ad;
+    border-color: #9bd3ad;
+    color: #18201b;
+}
+
+body.tema-escuro .theme-toggle:hover {
+    background-color: #c0e5ca;
+    border-color: #c0e5ca;
+}
+
+.theme-toggle {
+    white-space: nowrap;
 }
