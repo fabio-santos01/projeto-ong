@@ -2,7 +2,7 @@
     return `
         <section id="inicio">
             <h2>Bem-vindo à Nome da ONG</h2>
-            <img src="imagens/images.webp" alt="Voluntários da Nome da ONG realizando uma ação social com a comunidade">
+            <img src="/projeto-ong/imagens/images.webp" alt="Voluntários da Nome da ONG realizando uma ação social com a comunidade">
         </section>
     `;
 }
